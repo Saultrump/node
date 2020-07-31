@@ -1,0 +1,567 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="classic_green_left.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="classic_green_left_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Keys</div><div class="reportStats">viernes, 31 de julio de 2020 01:47:53 p. m.</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li><a href="Tables.html">Entities</a></li><li><a href="Columns.html">Attributes</a></li><li><a href="Indexes.html">Indexes</a></li><li class="selLi"><a href="Keys.html" class="selAnchor">Keys</a></li><li><a href="Relations.html">Relationships</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Key_{5666B0E6-8730-437B-8019-397547F60022}">TTC_DIM_DESCUENTO_PK (BI_BM_RPT_ENT.TTC_DIM_DESCUENTOS)</option><option>------------</option><option value="Key_{B5328829-5FBD-48EE-9F4E-A6F5A48D65AE}">TTC_DIM_PRODUCTOS_PK (BI_BM_RPT_ENT.TTC_DIM_PRODUCTOS)</option><option>------------</option><option value="Key_{FADBBF50-46C5-4D33-8F03-4FE982B723B5}">TTC_DIM_PRODUCTOS_SCD_PK (BI_BM_RPT_ENT.TTC_DIM_PRODUCTOS_SCD)</option><option>------------</option><option value="Key_{99AE0598-3A82-47B6-B875-0C80CA70DF73}">TTC_DIM_TASADECAMBIO_PK (BI_BM_RPT_ENT.TTC_DIM_TASADECAMBIO)</option><option>------------</option><option value="Key_{99FDFA98-707E-4C87-BAB4-3FB17107B2A0}">TTC_USER_PK (BI_BM_RPT_ENT.TTC_DIM_USUARIOS)</option><option>------------</option><option value="Key_{2D7ABF9E-EB39-494F-8A85-B28A0E3C785F}">TTC_DIM_USUARIOS_SCD_PK (BI_BM_RPT_ENT.TTC_DIM_USUARIOS_SCD)</option><option>------------</option><option value="Key_{967C6231-245C-4323-AF39-211E53B29444}">TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO)</option><option>------------</option><option value="Key_{BD3A28F3-F85F-48BC-87D9-CCFFA035A5E3}">TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD)</option><option>------------</option><option value="Key_{4BA9524E-14B5-4046-B943-6600FB989258}">TTC_MT_AUTORIZACION_DE_REFACTURACION_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_REFACTURACION)</option><option>------------</option><option value="Key_{4E206F4C-6978-4E65-AB36-1040A9601989}">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD)</option><option>------------</option><option value="Key_{0CC51A18-3E05-4A0B-9BE9-254EEC161E0B}">STG_TTC_CUENTAS_PK (BI_BM_RPT_ENT.TTC_MT_CUENTAS)</option><option>------------</option><option value="Key_{D6B3FB51-328D-4979-8C09-E643DB37A212}">TTC_MT_CUENTAS_SCD_PK (BI_BM_RPT_ENT.TTC_MT_CUENTAS_SCD)</option><option>------------</option><option value="Key_{4208F187-1121-4F30-887A-965F020039AC}">TTC_MT_OPORTUNIDADES_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES)</option><option>------------</option><option value="Key_{7388050B-6699-43F9-A2E8-0D2C34A14068}">TTC_MT_OPP_DET_SCD_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</option><option>------------</option><option value="Key_{114AAF1C-238E-4B13-8961-E0A698550D99}">TTC_MT_OPP_DET_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</option><option>------------</option><option value="Key_{74A196CD-020D-483C-8324-0BD1792E5D0E}">TTC_MT_OPORTUNIDADES_HIST_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_HIST)</option><option>------------</option><option value="Key_{284E4F88-43AF-4723-B771-C5E203A2133E}">TTC_MT_OPORTUNIDADES_SCD_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_SCD)</option><option>------------</option><option value="Key_{74A1AE36-8C2D-4E35-9D27-4CFC7C64D555}">TTC_MT_SERVICIOS_PK (BI_BM_RPT_ENT.TTC_MT_SERVICIOS)</option><option>------------</option><option value="Key_{4E16855C-FAF5-44E0-9DF3-F991B7155B53}">TTC_MT_SERVICIOS_SCD_PK (BI_BM_RPT_ENT.TTC_MT_SERVICIOS_SCD)</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Key_{5666B0E6-8730-437B-8019-397547F60022}', this)">TTC_DIM_DESCUENTO_PK (BI_BM_RPT_ENT.TTC_DIM_DESCUENTOS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{B5328829-5FBD-48EE-9F4E-A6F5A48D65AE}', this)">TTC_DIM_PRODUCTOS_PK (BI_BM_RPT_ENT.TTC_DIM_PRODUCTOS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{FADBBF50-46C5-4D33-8F03-4FE982B723B5}', this)">TTC_DIM_PRODUCTOS_SCD_PK (BI_BM_RPT_ENT.TTC_DIM_PRODUCTOS_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{99AE0598-3A82-47B6-B875-0C80CA70DF73}', this)">TTC_DIM_TASADECAMBIO_PK (BI_BM_RPT_ENT.TTC_DIM_TASADECAMBIO)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{99FDFA98-707E-4C87-BAB4-3FB17107B2A0}', this)">TTC_USER_PK (BI_BM_RPT_ENT.TTC_DIM_USUARIOS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{2D7ABF9E-EB39-494F-8A85-B28A0E3C785F}', this)">TTC_DIM_USUARIOS_SCD_PK (BI_BM_RPT_ENT.TTC_DIM_USUARIOS_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{967C6231-245C-4323-AF39-211E53B29444}', this)">TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{BD3A28F3-F85F-48BC-87D9-CCFFA035A5E3}', this)">TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{4BA9524E-14B5-4046-B943-6600FB989258}', this)">TTC_MT_AUTORIZACION_DE_REFACTURACION_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_REFACTURACION)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{4E206F4C-6978-4E65-AB36-1040A9601989}', this)">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{0CC51A18-3E05-4A0B-9BE9-254EEC161E0B}', this)">STG_TTC_CUENTAS_PK (BI_BM_RPT_ENT.TTC_MT_CUENTAS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{D6B3FB51-328D-4979-8C09-E643DB37A212}', this)">TTC_MT_CUENTAS_SCD_PK (BI_BM_RPT_ENT.TTC_MT_CUENTAS_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{4208F187-1121-4F30-887A-965F020039AC}', this)">TTC_MT_OPORTUNIDADES_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{7388050B-6699-43F9-A2E8-0D2C34A14068}', this)">TTC_MT_OPP_DET_SCD_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{114AAF1C-238E-4B13-8961-E0A698550D99}', this)">TTC_MT_OPP_DET_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{74A196CD-020D-483C-8324-0BD1792E5D0E}', this)">TTC_MT_OPORTUNIDADES_HIST_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_HIST)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{284E4F88-43AF-4723-B771-C5E203A2133E}', this)">TTC_MT_OPORTUNIDADES_SCD_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{74A1AE36-8C2D-4E35-9D27-4CFC7C64D555}', this)">TTC_MT_SERVICIOS_PK (BI_BM_RPT_ENT.TTC_MT_SERVICIOS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Key_{4E16855C-FAF5-44E0-9DF3-F991B7155B53}', this)">TTC_MT_SERVICIOS_SCD_PK (BI_BM_RPT_ENT.TTC_MT_SERVICIOS_SCD)</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Key_{5666B0E6-8730-437B-8019-397547F60022}" class="item">
+<a name = "Key_{5666B0E6-8730-437B-8019-397547F60022}"></a>
+<div class="caption1"><p>TTC_DIM_DESCUENTO_PK (BI_BM_RPT_ENT.TTC_DIM_DESCUENTOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_DIM_DESCUENTO_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_DIM_DESCUENTOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_DESCUENTO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_DIM_DESCUENTO_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{B5328829-5FBD-48EE-9F4E-A6F5A48D65AE}" class="item">
+<a name = "Key_{B5328829-5FBD-48EE-9F4E-A6F5A48D65AE}"></a>
+<div class="caption1"><p>TTC_DIM_PRODUCTOS_PK (BI_BM_RPT_ENT.TTC_DIM_PRODUCTOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_DIM_PRODUCTOS_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_DIM_PRODUCTOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_DIM_PRODUCTOS_WIDDIM_PRODUCTO_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{FADBBF50-46C5-4D33-8F03-4FE982B723B5}" class="item">
+<a name = "Key_{FADBBF50-46C5-4D33-8F03-4FE982B723B5}"></a>
+<div class="caption1"><p>TTC_DIM_PRODUCTOS_SCD_PK (BI_BM_RPT_ENT.TTC_DIM_PRODUCTOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_DIM_PRODUCTOS_SCD_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_DIM_PRODUCTOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_DIM_PRODUCTOS_SCD_ROW_ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{99AE0598-3A82-47B6-B875-0C80CA70DF73}" class="item">
+<a name = "Key_{99AE0598-3A82-47B6-B875-0C80CA70DF73}"></a>
+<div class="caption1"><p>TTC_DIM_TASADECAMBIO_PK (BI_BM_RPT_ENT.TTC_DIM_TASADECAMBIO)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_DIM_TASADECAMBIO_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_DIM_TASADECAMBIO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_TASADECAMBIO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_DIM_TASADECAMBIO_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{99FDFA98-707E-4C87-BAB4-3FB17107B2A0}" class="item">
+<a name = "Key_{99FDFA98-707E-4C87-BAB4-3FB17107B2A0}"></a>
+<div class="caption1"><p>TTC_USER_PK (BI_BM_RPT_ENT.TTC_DIM_USUARIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_USER_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_DIM_USUARIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_USUARIO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_DIM_USUARIOS_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{2D7ABF9E-EB39-494F-8A85-B28A0E3C785F}" class="item">
+<a name = "Key_{2D7ABF9E-EB39-494F-8A85-B28A0E3C785F}"></a>
+<div class="caption1"><p>TTC_DIM_USUARIOS_SCD_PK (BI_BM_RPT_ENT.TTC_DIM_USUARIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_DIM_USUARIOS_SCD_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_DIM_USUARIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_DIM_USUARIOS_SCD_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{967C6231-245C-4323-AF39-211E53B29444}" class="item">
+<a name = "Key_{967C6231-245C-4323-AF39-211E53B29444}"></a>
+<div class="caption1"><p>TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_NOTAS_CREDITO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{BD3A28F3-F85F-48BC-87D9-CCFFA035A5E3}" class="item">
+<a name = "Key_{BD3A28F3-F85F-48BC-87D9-CCFFA035A5E3}"></a>
+<div class="caption1"><p>TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{4BA9524E-14B5-4046-B943-6600FB989258}" class="item">
+<a name = "Key_{4BA9524E-14B5-4046-B943-6600FB989258}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_REFACTURACION_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_REFACTURACION)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_AUTORIZACION_DE_REFACTURACION_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_REFACTURACION</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_REFACTURACION</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{4E206F4C-6978-4E65-AB36-1040A9601989}" class="item">
+<a name = "Key_{4E206F4C-6978-4E65-AB36-1040A9601989}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_PK (BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{0CC51A18-3E05-4A0B-9BE9-254EEC161E0B}" class="item">
+<a name = "Key_{0CC51A18-3E05-4A0B-9BE9-254EEC161E0B}"></a>
+<div class="caption1"><p>STG_TTC_CUENTAS_PK (BI_BM_RPT_ENT.TTC_MT_CUENTAS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">STG_TTC_CUENTAS_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_CUENTAS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{D6B3FB51-328D-4979-8C09-E643DB37A212}" class="item">
+<a name = "Key_{D6B3FB51-328D-4979-8C09-E643DB37A212}"></a>
+<div class="caption1"><p>TTC_MT_CUENTAS_SCD_PK (BI_BM_RPT_ENT.TTC_MT_CUENTAS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_CUENTAS_SCD_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_CUENTAS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{4208F187-1121-4F30-887A-965F020039AC}" class="item">
+<a name = "Key_{4208F187-1121-4F30-887A-965F020039AC}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_OPORTUNIDADES_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_MT_OPORTUNIDADES_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{7388050B-6699-43F9-A2E8-0D2C34A14068}" class="item">
+<a name = "Key_{7388050B-6699-43F9-A2E8-0D2C34A14068}"></a>
+<div class="caption1"><p>TTC_MT_OPP_DET_SCD_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_OPP_DET_SCD_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_DET_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_DETALLE_T03</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{114AAF1C-238E-4B13-8961-E0A698550D99}" class="item">
+<a name = "Key_{114AAF1C-238E-4B13-8961-E0A698550D99}"></a>
+<div class="caption1"><p>TTC_MT_OPP_DET_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_OPP_DET_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_DETALLE</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD_DETALLE, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_DETALLE_T03</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{74A196CD-020D-483C-8324-0BD1792E5D0E}" class="item">
+<a name = "Key_{74A196CD-020D-483C-8324-0BD1792E5D0E}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_HIST_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_HIST)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_OPORTUNIDADES_HIST_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_HIST</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDADES_HIST</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{284E4F88-43AF-4723-B771-C5E203A2133E}" class="item">
+<a name = "Key_{284E4F88-43AF-4723-B771-C5E203A2133E}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_SCD_PK (BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_OPORTUNIDADES_SCD_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_OPORTUNIDADES_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{74A1AE36-8C2D-4E35-9D27-4CFC7C64D555}" class="item">
+<a name = "Key_{74A1AE36-8C2D-4E35-9D27-4CFC7C64D555}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_PK (BI_BM_RPT_ENT.TTC_MT_SERVICIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_SERVICIOS_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_SERVICIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_SERVICIO, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_MT_SERVICIOS_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Key_{4E16855C-FAF5-44E0-9DF3-F991B7155B53}" class="item">
+<a name = "Key_{4E16855C-FAF5-44E0-9DF3-F991B7155B53}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_SCD_PK (BI_BM_RPT_ENT.TTC_MT_SERVICIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">TTC_MT_SERVICIOS_SCD_PK</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_RPT_ENT.TTC_MT_SERVICIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Key Type</td>
+<td class="tabdata">Primary Key</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Key Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Using Index Name</td>
+<td class="tabdata" width="80%">BI_BM_RPT_ENT.IDX_TTC_MT_SERVICIOS_SCD_T01</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>
