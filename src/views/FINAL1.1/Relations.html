@@ -1,0 +1,4329 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="classic_green.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="classic_green_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Modelo de Datos - EDW de Bestel</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header">
+     <!-- imagen izzi  -->
+<div class="title1">
+    <img src="logo.png" style="margin: initial;" width="150" height="100" img/> </div></div>
+
+
+    <div class="title2">Relationships</div>
+         <!-- Obtener fecha de hoy-->
+         <div class="reportStats"> <script src="getdate.js"></script></div>
+    
+    <div class="titleimage"><a href="https://www.quest.com/" target="_blank">
+        <img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div>
+        <div class="headerEnd"><p>&nbsp;</p></div></div>
+        <div id="navTop">
+            <ul>
+                 <!--<li><a href="MInfo.html">Model Info</a></li>-->
+                 <li><a href="MImage.html">ER Diagram</a></li>
+                 <li><a href="Tables.html">Entities</a></li>
+                 <!--<li><a href="Columns.html">Attributes</a></li>-->
+                 <!--<li><a href="Indexes.html">Indexes</a></li>-->
+                 <!--<li><a href="Keys.html">Keys</a></li>-->
+                 <li class="selLi"><a href="Relations.html" class="selAnchor">Relationships</a></li>
+                 <!--<li><a href="Tablespaces.html">Tablespaces</a></li></ul>-->
+    
+<div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Relation_{B65894BA-35D8-482F-AAC5-128021127AD6}">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDCAT_PRODUCTO</option><option value="Relation_{1D127BCA-C697-495C-AE96-93B5D6B6C0D4}">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{8EDAEF36-DB0F-4BC8-B743-63CF75C00554}">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{35588F8D-4845-4468-A208-D76230CB501D}">TTC_CAT_LISTA_DE_PRECIOS_WIDCAT_PRODUCTO</option><option value="Relation_{DD998630-0F0E-4317-A5FA-F5492A03B1DB}">TTC_CAT_LISTA_DE_PRECIOS_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{DE9A3804-1FD5-4B44-924F-07BF9854E452}">TTC_CAT_LISTA_DE_PRECIOS_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{DF43DC27-C42A-4984-B9B2-406CD8EC973F}">TTC_CAT_PRODUCTOS_SCD_WIDCAT_PRODUCTO</option><option value="Relation_{C994672E-5366-46EB-9FEB-3B5C952A8EA7}">TTC_CAT_PRODUCTOS_SCD_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{DE237C20-F3DC-46A1-8F44-002E15699219}">TTC_CAT_PRODUCTOS_SCD_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{FF00F997-D536-4B4E-BB70-8C4036955D0A}">TTC_CAT_PRODUCTOS_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{392A724A-770B-46A3-846B-9C7C97EC8660}">TTC_CAT_PRODUCTOS_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{C99E93D8-FD49-41E6-8007-A2F0013622A9}">TTC_DIM_DESCUENTOS_WIDDIM_USUARIO_DIRECTORVTA</option><option value="Relation_{588C1418-A181-48D2-8F17-DD31D5B274FE}">TTC_DIM_DESCUENTOS_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{74C53422-F94E-4C2D-93ED-0056B08B24C3}">TTC_DIM_TASADECAMBIO_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{4BF5A11F-B4D1-492D-AF4F-A110CADA3989}">TTC_DIM_USUARIOS_SCD_WIDDIM_USUARIO</option><option value="Relation_{FC7B7693-93CB-40C5-A90C-167F70AC99B2}">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{C253CE9C-CF6D-49AA-8B8E-1BD1D7C2E326}">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDDIM_USUARIO_OWNER</option><option value="Relation_{DD178A47-66BB-4B5C-B7EE-88B8030F5F5B}">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_CUENTA</option><option value="Relation_{E4A8432D-D31F-43B8-A701-68BD214D274A}">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_CUENTA</option><option value="Relation_{C32479DF-CDDA-46B1-A422-22543255A828}">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_NOTAS_CREDITO</option><option value="Relation_{F404AB8A-F3C2-4A17-8E53-BDC26337E19B}">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{EFE61A87-6977-4F83-B97D-C4C2ECDD2F48}">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDDIM_USUARIO_OWNER</option><option value="Relation_{A1F25471-1ADF-4FE5-A973-6AC2E2EE37B4}">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDMT_CUENTA</option><option value="Relation_{F70F1FAE-9F7F-40FD-A255-C9DF6B27AFDC}">TTC_MT_AUTORIZACION_DE_REFACTURACION _WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{512AC90E-CDBE-432F-8E28-F057462ED017}">TTC_MT_AUTORIZACION_DE_REFACTURACION _WIDDIM_USUARIO_OWNER</option><option value="Relation_{BF68F7DC-7635-4E75-BE02-E6CF6BA55794}">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD _WIDMT_REFACTURACION</option><option value="Relation_{E01293F6-B48B-4A6F-9931-D378CC586064}">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{41DAC74B-6809-4E29-9BBF-F7A8D779CABE}">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_WIDDIM_USUARIO_OWNER</option><option value="Relation_{33D5397C-7369-40A5-A3EC-3A094D0E2D93}">TTC_MT_AUTORIZACION_DE_REFACTURACION_WIDMT_CUENTA</option><option value="Relation_{AAACB2FB-ACAD-47DA-9A61-6D1E3DF1818D}">TTC_MT_CUENTAS_SCD_WIDMT_CUENTA</option><option value="Relation_{47968D3F-73B6-45F1-AA02-25D5850B768C}">TTC_MT_CUENTAS_WIDDIM_USUARIO_OWNER</option><option value="Relation_{5C601185-46C8-48A8-B58D-CDECFE5AF696}">TTC_MT_OPORTUNIDADES_DET_SCD _WIDMT_OPORTUNIDAD_DETALLE</option><option value="Relation_{FAFEAA70-47E7-488A-8B5C-6F92CFD24D85}">TTC_MT_OPORTUNIDADES_DETALLE _WIDCAT_PRODUCTO</option><option value="Relation_{BA6B86F8-4B3D-4065-A064-1A69AE51ED7D}">TTC_MT_OPORTUNIDADES_DETALLE _WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{6749D943-B3F8-46E0-8F1B-156971E260B1}">TTC_MT_OPORTUNIDADES_DETALLE _WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{422CBD53-1465-4D54-9DB2-F94256B522D6}">TTC_MT_OPORTUNIDADES_DETALLE _WIDMT_OPORTUNIDAD</option><option value="Relation_{74C0805C-E81C-440C-941A-DA6999811033}">TTC_MT_OPORTUNIDADES_DETALLE_SCD _WIDCAT_PRODUCTO</option><option value="Relation_{AF20D070-D71E-43BD-92D3-177590D6BABB}">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_DESCUENTO</option><option value="Relation_{38D556EB-30BA-4F60-9127-C681D8CD1697}">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{75522414-8154-4157-99E6-B677A61C4C39}">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{BD15DBF7-AF94-4A79-910E-2CC3A596B6A4}">TTC_MT_OPORTUNIDADES_DETALLE_WIDDIM_DESCUENTO</option><option value="Relation_{41BA2AF4-2424-4BCF-BB4B-9893860E87B8}">TTC_MT_OPORTUNIDADES_DETALLE_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{D69BC970-55C9-437D-9FE9-512C9A1C7C10}">TTC_MT_OPORTUNIDADES_DETALLES_SCD _WIDMT_OPORTUNIDAD</option><option value="Relation_{D53B7236-78FB-46AB-BADD-5C58BD7B1CD5}">TTC_MT_OPORTUNIDADES_DETALLES_SCD_WIDCAT_LISTA_PRECIO</option><option value="Relation_{A939771D-EC59-41CD-97E8-E948B5BD133B}">TTC_MT_OPORTUNIDADES_DETALLES_WIDCAT_LISTA_PRECIO</option><option value="Relation_{ED8969CA-B888-4827-A4DC-4BA22DC75018}">TTC_MT_OPORTUNIDADES_HIST _WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{AC75E3C4-3F47-4F3E-9859-3AD73B38FC41}">TTC_MT_OPORTUNIDADES_HIST _WIDMT_OPORTUNIDAD</option><option value="Relation_{81279709-C7D2-4DA0-8497-0115505F48E3}">TTC_MT_OPORTUNIDADES_SCD _WIDMT_OPORTUNIDAD</option><option value="Relation_{3F6349B3-2D3C-4C8C-B8B3-09BE34DB707E}">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{4FFFFB82-EB48-4AA1-80C8-3FFE3F62DC36}">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{6B5F5844-F3A7-4488-AE26-740D52E4021E}">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_OWNER</option><option value="Relation_{7729656C-C9B8-4027-90E1-122AFAFC81F0}">TTC_MT_OPORTUNIDADES_SCD_WIDMT_CUENTA</option><option value="Relation_{B3A9A53E-67DB-42C3-B3D7-5D9E6B42DF96}">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_CREATEDBY</option><option value="Relation_{3A96441C-86A1-4A85-AA52-F667E472435E}">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_LASTMODBY</option><option value="Relation_{C92A3474-AC8F-4637-8DB9-D1CD695E31AC}">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_OWNER</option><option value="Relation_{08BB901B-07C1-4856-B7FD-30A2AEBA0CAA}">TTC_MT_OPORTUNIDADES_WIDMT_CUENTA</option><option value="Relation_{37D8F78C-4A41-41AC-ABC2-8BC5E67C912E}">TTC_MT_SERVICIOS_SCD_WIDCAT_PRODUCTO</option><option value="Relation_{7F8A80FE-7F0A-4C52-BF51-4848246E859C}">TTC_MT_SERVICIOS_SCD_WIDMT_CUENTA</option><option value="Relation_{15310B85-696C-42C5-970A-AD1F95A45190}">TTC_MT_SERVICIOS_SCD_WIDMT_OPORTUNIDAD</option><option value="Relation_{AA008DAC-3A8E-475C-BB68-4940EFB17CF1}">TTC_MT_SERVICIOS_SCD_WIDMT_OPORTUNIDAD_DETALLE</option><option value="Relation_{FC996998-4C7B-43F2-9BC8-5C32E7A96068}">TTC_MT_SERVICIOS_SCD_WIDMT_SERVICIO</option><option value="Relation_{FC2AAA94-BBE7-425E-A8F8-EAC9B52FEB88}">TTC_MT_SERVICIOS_WIDCAT_PRODUCTO</option><option value="Relation_{8000B6CC-8A1F-4B63-A067-DC7A5B096CEF}">TTC_MT_SERVICIOS_WIDMT_CUENTA</option><option value="Relation_{5E40FFB3-9670-4DF6-8966-1BA24A9630EE}">TTC_MT_SERVICIOS_WIDMT_OPORTUNIDAD</option><option value="Relation_{0146FF6D-1131-4D20-B75F-C117F2100922}">TTC_MT_SERVICIOS_WIDMT_OPORTUNIDAD_DETALLE</option><option value="Relation_{DCEB6F74-41E2-40E1-9967-8855983D4221}">TTC_TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDCAT_LISTA_PRECIO</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Relation_{B65894BA-35D8-482F-AAC5-128021127AD6}', this)">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDCAT_PRODUCTO</a></li><li><a onClick="return showDetail('Relation_{1D127BCA-C697-495C-AE96-93B5D6B6C0D4}', this)">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{8EDAEF36-DB0F-4BC8-B743-63CF75C00554}', this)">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{35588F8D-4845-4468-A208-D76230CB501D}', this)">TTC_CAT_LISTA_DE_PRECIOS_WIDCAT_PRODUCTO</a></li><li><a onClick="return showDetail('Relation_{DD998630-0F0E-4317-A5FA-F5492A03B1DB}', this)">TTC_CAT_LISTA_DE_PRECIOS_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{DE9A3804-1FD5-4B44-924F-07BF9854E452}', this)">TTC_CAT_LISTA_DE_PRECIOS_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{DF43DC27-C42A-4984-B9B2-406CD8EC973F}', this)">TTC_CAT_PRODUCTOS_SCD_WIDCAT_PRODUCTO</a></li><li><a onClick="return showDetail('Relation_{C994672E-5366-46EB-9FEB-3B5C952A8EA7}', this)">TTC_CAT_PRODUCTOS_SCD_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{DE237C20-F3DC-46A1-8F44-002E15699219}', this)">TTC_CAT_PRODUCTOS_SCD_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{FF00F997-D536-4B4E-BB70-8C4036955D0A}', this)">TTC_CAT_PRODUCTOS_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{392A724A-770B-46A3-846B-9C7C97EC8660}', this)">TTC_CAT_PRODUCTOS_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{C99E93D8-FD49-41E6-8007-A2F0013622A9}', this)">TTC_DIM_DESCUENTOS_WIDDIM_USUARIO_DIRECTORVTA</a></li><li><a onClick="return showDetail('Relation_{588C1418-A181-48D2-8F17-DD31D5B274FE}', this)">TTC_DIM_DESCUENTOS_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{74C53422-F94E-4C2D-93ED-0056B08B24C3}', this)">TTC_DIM_TASADECAMBIO_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{4BF5A11F-B4D1-492D-AF4F-A110CADA3989}', this)">TTC_DIM_USUARIOS_SCD_WIDDIM_USUARIO</a></li><li><a onClick="return showDetail('Relation_{FC7B7693-93CB-40C5-A90C-167F70AC99B2}', this)">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{C253CE9C-CF6D-49AA-8B8E-1BD1D7C2E326}', this)">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDDIM_USUARIO_OWNER</a></li><li><a onClick="return showDetail('Relation_{DD178A47-66BB-4B5C-B7EE-88B8030F5F5B}', this)">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{E4A8432D-D31F-43B8-A701-68BD214D274A}', this)">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{C32479DF-CDDA-46B1-A422-22543255A828}', this)">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_NOTAS_CREDITO</a></li><li><a onClick="return showDetail('Relation_{F404AB8A-F3C2-4A17-8E53-BDC26337E19B}', this)">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{EFE61A87-6977-4F83-B97D-C4C2ECDD2F48}', this)">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDDIM_USUARIO_OWNER</a></li><li><a onClick="return showDetail('Relation_{A1F25471-1ADF-4FE5-A973-6AC2E2EE37B4}', this)">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{F70F1FAE-9F7F-40FD-A255-C9DF6B27AFDC}', this)">TTC_MT_AUTORIZACION_DE_REFACTURACION _WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{512AC90E-CDBE-432F-8E28-F057462ED017}', this)">TTC_MT_AUTORIZACION_DE_REFACTURACION _WIDDIM_USUARIO_OWNER</a></li><li><a onClick="return showDetail('Relation_{BF68F7DC-7635-4E75-BE02-E6CF6BA55794}', this)">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD _WIDMT_REFACTURACION</a></li><li><a onClick="return showDetail('Relation_{E01293F6-B48B-4A6F-9931-D378CC586064}', this)">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{41DAC74B-6809-4E29-9BBF-F7A8D779CABE}', this)">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_WIDDIM_USUARIO_OWNER</a></li><li><a onClick="return showDetail('Relation_{33D5397C-7369-40A5-A3EC-3A094D0E2D93}', this)">TTC_MT_AUTORIZACION_DE_REFACTURACION_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{AAACB2FB-ACAD-47DA-9A61-6D1E3DF1818D}', this)">TTC_MT_CUENTAS_SCD_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{47968D3F-73B6-45F1-AA02-25D5850B768C}', this)">TTC_MT_CUENTAS_WIDDIM_USUARIO_OWNER</a></li><li><a onClick="return showDetail('Relation_{5C601185-46C8-48A8-B58D-CDECFE5AF696}', this)">TTC_MT_OPORTUNIDADES_DET_SCD _WIDMT_OPORTUNIDAD_DETALLE</a></li><li><a onClick="return showDetail('Relation_{FAFEAA70-47E7-488A-8B5C-6F92CFD24D85}', this)">TTC_MT_OPORTUNIDADES_DETALLE _WIDCAT_PRODUCTO</a></li><li><a onClick="return showDetail('Relation_{BA6B86F8-4B3D-4065-A064-1A69AE51ED7D}', this)">TTC_MT_OPORTUNIDADES_DETALLE _WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{6749D943-B3F8-46E0-8F1B-156971E260B1}', this)">TTC_MT_OPORTUNIDADES_DETALLE _WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{422CBD53-1465-4D54-9DB2-F94256B522D6}', this)">TTC_MT_OPORTUNIDADES_DETALLE _WIDMT_OPORTUNIDAD</a></li><li><a onClick="return showDetail('Relation_{74C0805C-E81C-440C-941A-DA6999811033}', this)">TTC_MT_OPORTUNIDADES_DETALLE_SCD _WIDCAT_PRODUCTO</a></li><li><a onClick="return showDetail('Relation_{AF20D070-D71E-43BD-92D3-177590D6BABB}', this)">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_DESCUENTO</a></li><li><a onClick="return showDetail('Relation_{38D556EB-30BA-4F60-9127-C681D8CD1697}', this)">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{75522414-8154-4157-99E6-B677A61C4C39}', this)">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{BD15DBF7-AF94-4A79-910E-2CC3A596B6A4}', this)">TTC_MT_OPORTUNIDADES_DETALLE_WIDDIM_DESCUENTO</a></li><li><a onClick="return showDetail('Relation_{41BA2AF4-2424-4BCF-BB4B-9893860E87B8}', this)">TTC_MT_OPORTUNIDADES_DETALLE_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{D69BC970-55C9-437D-9FE9-512C9A1C7C10}', this)">TTC_MT_OPORTUNIDADES_DETALLES_SCD _WIDMT_OPORTUNIDAD</a></li><li><a onClick="return showDetail('Relation_{D53B7236-78FB-46AB-BADD-5C58BD7B1CD5}', this)">TTC_MT_OPORTUNIDADES_DETALLES_SCD_WIDCAT_LISTA_PRECIO</a></li><li><a onClick="return showDetail('Relation_{A939771D-EC59-41CD-97E8-E948B5BD133B}', this)">TTC_MT_OPORTUNIDADES_DETALLES_WIDCAT_LISTA_PRECIO</a></li><li><a onClick="return showDetail('Relation_{ED8969CA-B888-4827-A4DC-4BA22DC75018}', this)">TTC_MT_OPORTUNIDADES_HIST _WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{AC75E3C4-3F47-4F3E-9859-3AD73B38FC41}', this)">TTC_MT_OPORTUNIDADES_HIST _WIDMT_OPORTUNIDAD</a></li><li><a onClick="return showDetail('Relation_{81279709-C7D2-4DA0-8497-0115505F48E3}', this)">TTC_MT_OPORTUNIDADES_SCD _WIDMT_OPORTUNIDAD</a></li><li><a onClick="return showDetail('Relation_{3F6349B3-2D3C-4C8C-B8B3-09BE34DB707E}', this)">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{4FFFFB82-EB48-4AA1-80C8-3FFE3F62DC36}', this)">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{6B5F5844-F3A7-4488-AE26-740D52E4021E}', this)">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_OWNER</a></li><li><a onClick="return showDetail('Relation_{7729656C-C9B8-4027-90E1-122AFAFC81F0}', this)">TTC_MT_OPORTUNIDADES_SCD_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{B3A9A53E-67DB-42C3-B3D7-5D9E6B42DF96}', this)">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_CREATEDBY</a></li><li><a onClick="return showDetail('Relation_{3A96441C-86A1-4A85-AA52-F667E472435E}', this)">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_LASTMODBY</a></li><li><a onClick="return showDetail('Relation_{C92A3474-AC8F-4637-8DB9-D1CD695E31AC}', this)">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_OWNER</a></li><li><a onClick="return showDetail('Relation_{08BB901B-07C1-4856-B7FD-30A2AEBA0CAA}', this)">TTC_MT_OPORTUNIDADES_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{37D8F78C-4A41-41AC-ABC2-8BC5E67C912E}', this)">TTC_MT_SERVICIOS_SCD_WIDCAT_PRODUCTO</a></li><li><a onClick="return showDetail('Relation_{7F8A80FE-7F0A-4C52-BF51-4848246E859C}', this)">TTC_MT_SERVICIOS_SCD_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{15310B85-696C-42C5-970A-AD1F95A45190}', this)">TTC_MT_SERVICIOS_SCD_WIDMT_OPORTUNIDAD</a></li><li><a onClick="return showDetail('Relation_{AA008DAC-3A8E-475C-BB68-4940EFB17CF1}', this)">TTC_MT_SERVICIOS_SCD_WIDMT_OPORTUNIDAD_DETALLE</a></li><li><a onClick="return showDetail('Relation_{FC996998-4C7B-43F2-9BC8-5C32E7A96068}', this)">TTC_MT_SERVICIOS_SCD_WIDMT_SERVICIO</a></li><li><a onClick="return showDetail('Relation_{FC2AAA94-BBE7-425E-A8F8-EAC9B52FEB88}', this)">TTC_MT_SERVICIOS_WIDCAT_PRODUCTO</a></li><li><a onClick="return showDetail('Relation_{8000B6CC-8A1F-4B63-A067-DC7A5B096CEF}', this)">TTC_MT_SERVICIOS_WIDMT_CUENTA</a></li><li><a onClick="return showDetail('Relation_{5E40FFB3-9670-4DF6-8966-1BA24A9630EE}', this)">TTC_MT_SERVICIOS_WIDMT_OPORTUNIDAD</a></li><li><a onClick="return showDetail('Relation_{0146FF6D-1131-4D20-B75F-C117F2100922}', this)">TTC_MT_SERVICIOS_WIDMT_OPORTUNIDAD_DETALLE</a></li><li><a onClick="return showDetail('Relation_{DCEB6F74-41E2-40E1-9967-8855983D4221}', this)">TTC_TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDCAT_LISTA_PRECIO</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Relation_{B65894BA-35D8-482F-AAC5-128021127AD6}" class="item">
+<a name = "Relation_{B65894BA-35D8-482F-AAC5-128021127AD6}"></a>
+<div class="caption1"><p>TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDCAT_PRODUCTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDCAT_PRODUCTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_PRODUCTOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{1D127BCA-C697-495C-AE96-93B5D6B6C0D4}" class="item">
+<a name = "Relation_{1D127BCA-C697-495C-AE96-93B5D6B6C0D4}"></a>
+<div class="caption1"><p>TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{8EDAEF36-DB0F-4BC8-B743-63CF75C00554}" class="item">
+<a name = "Relation_{8EDAEF36-DB0F-4BC8-B743-63CF75C00554}"></a>
+<div class="caption1"><p>TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{35588F8D-4845-4468-A208-D76230CB501D}" class="item">
+<a name = "Relation_{35588F8D-4845-4468-A208-D76230CB501D}"></a>
+<div class="caption1"><p>TTC_CAT_LISTA_DE_PRECIOS_WIDCAT_PRODUCTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_WIDCAT_PRODUCTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_PRODUCTOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{DD998630-0F0E-4317-A5FA-F5492A03B1DB}" class="item">
+<a name = "Relation_{DD998630-0F0E-4317-A5FA-F5492A03B1DB}"></a>
+<div class="caption1"><p>TTC_CAT_LISTA_DE_PRECIOS_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{DE9A3804-1FD5-4B44-924F-07BF9854E452}" class="item">
+<a name = "Relation_{DE9A3804-1FD5-4B44-924F-07BF9854E452}"></a>
+<div class="caption1"><p>TTC_CAT_LISTA_DE_PRECIOS_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{DF43DC27-C42A-4984-B9B2-406CD8EC973F}" class="item">
+<a name = "Relation_{DF43DC27-C42A-4984-B9B2-406CD8EC973F}"></a>
+<div class="caption1"><p>TTC_CAT_PRODUCTOS_SCD_WIDCAT_PRODUCTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS_SCD_WIDCAT_PRODUCTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_PRODUCTOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{C994672E-5366-46EB-9FEB-3B5C952A8EA7}" class="item">
+<a name = "Relation_{C994672E-5366-46EB-9FEB-3B5C952A8EA7}"></a>
+<div class="caption1"><p>TTC_CAT_PRODUCTOS_SCD_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS_SCD_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{DE237C20-F3DC-46A1-8F44-002E15699219}" class="item">
+<a name = "Relation_{DE237C20-F3DC-46A1-8F44-002E15699219}"></a>
+<div class="caption1"><p>TTC_CAT_PRODUCTOS_SCD_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS_SCD_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{FF00F997-D536-4B4E-BB70-8C4036955D0A}" class="item">
+<a name = "Relation_{FF00F997-D536-4B4E-BB70-8C4036955D0A}"></a>
+<div class="caption1"><p>TTC_CAT_PRODUCTOS_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{392A724A-770B-46A3-846B-9C7C97EC8660}" class="item">
+<a name = "Relation_{392A724A-770B-46A3-846B-9C7C97EC8660}"></a>
+<div class="caption1"><p>TTC_CAT_PRODUCTOS_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{C99E93D8-FD49-41E6-8007-A2F0013622A9}" class="item">
+<a name = "Relation_{C99E93D8-FD49-41E6-8007-A2F0013622A9}"></a>
+<div class="caption1"><p>TTC_DIM_DESCUENTOS_WIDDIM_USUARIO_DIRECTORVTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_DIM_DESCUENTOS_WIDDIM_USUARIO_DIRECTORVTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_DESCUENTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{588C1418-A181-48D2-8F17-DD31D5B274FE}" class="item">
+<a name = "Relation_{588C1418-A181-48D2-8F17-DD31D5B274FE}"></a>
+<div class="caption1"><p>TTC_DIM_DESCUENTOS_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_DIM_DESCUENTOS_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_DESCUENTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{74C53422-F94E-4C2D-93ED-0056B08B24C3}" class="item">
+<a name = "Relation_{74C53422-F94E-4C2D-93ED-0056B08B24C3}"></a>
+<div class="caption1"><p>TTC_DIM_TASADECAMBIO_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_DIM_TASADECAMBIO_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_TASADECAMBIO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{4BF5A11F-B4D1-492D-AF4F-A110CADA3989}" class="item">
+<a name = "Relation_{4BF5A11F-B4D1-492D-AF4F-A110CADA3989}"></a>
+<div class="caption1"><p>TTC_DIM_USUARIOS_SCD_WIDDIM_USUARIO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS_SCD_WIDDIM_USUARIO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{FC7B7693-93CB-40C5-A90C-167F70AC99B2}" class="item">
+<a name = "Relation_{FC7B7693-93CB-40C5-A90C-167F70AC99B2}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{C253CE9C-CF6D-49AA-8B8E-1BD1D7C2E326}" class="item">
+<a name = "Relation_{C253CE9C-CF6D-49AA-8B8E-1BD1D7C2E326}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDDIM_USUARIO_OWNER</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDDIM_USUARIO_OWNER</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{DD178A47-66BB-4B5C-B7EE-88B8030F5F5B}" class="item">
+<a name = "Relation_{DD178A47-66BB-4B5C-B7EE-88B8030F5F5B}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{E4A8432D-D31F-43B8-A701-68BD214D274A}" class="item">
+<a name = "Relation_{E4A8432D-D31F-43B8-A701-68BD214D274A}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{C32479DF-CDDA-46B1-A422-22543255A828}" class="item">
+<a name = "Relation_{C32479DF-CDDA-46B1-A422-22543255A828}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_NOTAS_CREDITO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD_WIDMT_NOTAS_CREDITO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_AUTORIZACION_DE_NOTAS_DE_CREDITO_PK'</td>
+<td class="tabdata" width="30%">WIDMT_NOTAS_CREDITO</td>
+<td class="tabdata" width="30%">WIDMT_NOTAS_CREDITO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{F404AB8A-F3C2-4A17-8E53-BDC26337E19B}" class="item">
+<a name = "Relation_{F404AB8A-F3C2-4A17-8E53-BDC26337E19B}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{EFE61A87-6977-4F83-B97D-C4C2ECDD2F48}" class="item">
+<a name = "Relation_{EFE61A87-6977-4F83-B97D-C4C2ECDD2F48}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDDIM_USUARIO_OWNER</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDDIM_USUARIO_OWNER</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{A1F25471-1ADF-4FE5-A973-6AC2E2EE37B4}" class="item">
+<a name = "Relation_{A1F25471-1ADF-4FE5-A973-6AC2E2EE37B4}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_NOTAS_DE_CREDITO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{F70F1FAE-9F7F-40FD-A255-C9DF6B27AFDC}" class="item">
+<a name = "Relation_{F70F1FAE-9F7F-40FD-A255-C9DF6B27AFDC}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_REFACTURACION _WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION _WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{512AC90E-CDBE-432F-8E28-F057462ED017}" class="item">
+<a name = "Relation_{512AC90E-CDBE-432F-8E28-F057462ED017}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_REFACTURACION _WIDDIM_USUARIO_OWNER</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION _WIDDIM_USUARIO_OWNER</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{BF68F7DC-7635-4E75-BE02-E6CF6BA55794}" class="item">
+<a name = "Relation_{BF68F7DC-7635-4E75-BE02-E6CF6BA55794}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD _WIDMT_REFACTURACION</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD _WIDMT_REFACTURACION</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_AUTORIZACION_DE_REFACTURACION_PK'</td>
+<td class="tabdata" width="30%">WIDMT_REFACTURACION</td>
+<td class="tabdata" width="30%">WIDMT_REFACTURACION</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{E01293F6-B48B-4A6F-9931-D378CC586064}" class="item">
+<a name = "Relation_{E01293F6-B48B-4A6F-9931-D378CC586064}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{41DAC74B-6809-4E29-9BBF-F7A8D779CABE}" class="item">
+<a name = "Relation_{41DAC74B-6809-4E29-9BBF-F7A8D779CABE}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_WIDDIM_USUARIO_OWNER</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD_WIDDIM_USUARIO_OWNER</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{33D5397C-7369-40A5-A3EC-3A094D0E2D93}" class="item">
+<a name = "Relation_{33D5397C-7369-40A5-A3EC-3A094D0E2D93}"></a>
+<div class="caption1"><p>TTC_MT_AUTORIZACION_DE_REFACTURACION_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_AUTORIZACION_DE_REFACTURACION</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{AAACB2FB-ACAD-47DA-9A61-6D1E3DF1818D}" class="item">
+<a name = "Relation_{AAACB2FB-ACAD-47DA-9A61-6D1E3DF1818D}"></a>
+<div class="caption1"><p>TTC_MT_CUENTAS_SCD_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS_SCD_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{47968D3F-73B6-45F1-AA02-25D5850B768C}" class="item">
+<a name = "Relation_{47968D3F-73B6-45F1-AA02-25D5850B768C}"></a>
+<div class="caption1"><p>TTC_MT_CUENTAS_WIDDIM_USUARIO_OWNER</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS_WIDDIM_USUARIO_OWNER</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{5C601185-46C8-48A8-B58D-CDECFE5AF696}" class="item">
+<a name = "Relation_{5C601185-46C8-48A8-B58D-CDECFE5AF696}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DET_SCD _WIDMT_OPORTUNIDAD_DETALLE</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DET_SCD _WIDMT_OPORTUNIDAD_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DET_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPP_DET_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD_DETALLE</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD_DETALLE</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{FAFEAA70-47E7-488A-8B5C-6F92CFD24D85}" class="item">
+<a name = "Relation_{FAFEAA70-47E7-488A-8B5C-6F92CFD24D85}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE _WIDCAT_PRODUCTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE _WIDCAT_PRODUCTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_PRODUCTOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{BA6B86F8-4B3D-4065-A064-1A69AE51ED7D}" class="item">
+<a name = "Relation_{BA6B86F8-4B3D-4065-A064-1A69AE51ED7D}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE _WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE _WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{6749D943-B3F8-46E0-8F1B-156971E260B1}" class="item">
+<a name = "Relation_{6749D943-B3F8-46E0-8F1B-156971E260B1}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE _WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE _WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{422CBD53-1465-4D54-9DB2-F94256B522D6}" class="item">
+<a name = "Relation_{422CBD53-1465-4D54-9DB2-F94256B522D6}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE _WIDMT_OPORTUNIDAD</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE _WIDMT_OPORTUNIDAD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPORTUNIDADES_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{74C0805C-E81C-440C-941A-DA6999811033}" class="item">
+<a name = "Relation_{74C0805C-E81C-440C-941A-DA6999811033}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE_SCD _WIDCAT_PRODUCTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE_SCD _WIDCAT_PRODUCTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DET_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_PRODUCTOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{AF20D070-D71E-43BD-92D3-177590D6BABB}" class="item">
+<a name = "Relation_{AF20D070-D71E-43BD-92D3-177590D6BABB}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_DESCUENTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_DESCUENTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_DESCUENTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DET_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_DIM_DESCUENTO_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_DESCUENTO</td>
+<td class="tabdata" width="30%">WIDDIM_DESCUENTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{38D556EB-30BA-4F60-9127-C681D8CD1697}" class="item">
+<a name = "Relation_{38D556EB-30BA-4F60-9127-C681D8CD1697}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DET_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{75522414-8154-4157-99E6-B677A61C4C39}" class="item">
+<a name = "Relation_{75522414-8154-4157-99E6-B677A61C4C39}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE_SCD_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DET_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{BD15DBF7-AF94-4A79-910E-2CC3A596B6A4}" class="item">
+<a name = "Relation_{BD15DBF7-AF94-4A79-910E-2CC3A596B6A4}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE_WIDDIM_DESCUENTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE_WIDDIM_DESCUENTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_DESCUENTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_DIM_DESCUENTO_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_DESCUENTO</td>
+<td class="tabdata" width="30%">WIDDIM_DESCUENTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{41BA2AF4-2424-4BCF-BB4B-9893860E87B8}" class="item">
+<a name = "Relation_{41BA2AF4-2424-4BCF-BB4B-9893860E87B8}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLE_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{D69BC970-55C9-437D-9FE9-512C9A1C7C10}" class="item">
+<a name = "Relation_{D69BC970-55C9-437D-9FE9-512C9A1C7C10}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLES_SCD _WIDMT_OPORTUNIDAD</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLES_SCD _WIDMT_OPORTUNIDAD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DET_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPORTUNIDADES_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{D53B7236-78FB-46AB-BADD-5C58BD7B1CD5}" class="item">
+<a name = "Relation_{D53B7236-78FB-46AB-BADD-5C58BD7B1CD5}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLES_SCD_WIDCAT_LISTA_PRECIO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLES_SCD_WIDCAT_LISTA_PRECIO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DET_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_LISTA_DE_PRECIOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_LISTA_PRECIO</td>
+<td class="tabdata" width="30%">WIDCAT_LISTA_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{A939771D-EC59-41CD-97E8-E948B5BD133B}" class="item">
+<a name = "Relation_{A939771D-EC59-41CD-97E8-E948B5BD133B}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_DETALLES_WIDCAT_LISTA_PRECIO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLES_WIDCAT_LISTA_PRECIO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_LISTA_DE_PRECIOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_LISTA_PRECIO</td>
+<td class="tabdata" width="30%">WIDCAT_LISTA_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{ED8969CA-B888-4827-A4DC-4BA22DC75018}" class="item">
+<a name = "Relation_{ED8969CA-B888-4827-A4DC-4BA22DC75018}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_HIST _WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_HIST _WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_HIST</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{AC75E3C4-3F47-4F3E-9859-3AD73B38FC41}" class="item">
+<a name = "Relation_{AC75E3C4-3F47-4F3E-9859-3AD73B38FC41}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_HIST _WIDMT_OPORTUNIDAD</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_HIST _WIDMT_OPORTUNIDAD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_HIST</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPORTUNIDADES_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{81279709-C7D2-4DA0-8497-0115505F48E3}" class="item">
+<a name = "Relation_{81279709-C7D2-4DA0-8497-0115505F48E3}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_SCD _WIDMT_OPORTUNIDAD</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD _WIDMT_OPORTUNIDAD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPORTUNIDADES_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{3F6349B3-2D3C-4C8C-B8B3-09BE34DB707E}" class="item">
+<a name = "Relation_{3F6349B3-2D3C-4C8C-B8B3-09BE34DB707E}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{4FFFFB82-EB48-4AA1-80C8-3FFE3F62DC36}" class="item">
+<a name = "Relation_{4FFFFB82-EB48-4AA1-80C8-3FFE3F62DC36}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{6B5F5844-F3A7-4488-AE26-740D52E4021E}" class="item">
+<a name = "Relation_{6B5F5844-F3A7-4488-AE26-740D52E4021E}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_OWNER</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD_WIDDIM_USUARIO_OWNER</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{7729656C-C9B8-4027-90E1-122AFAFC81F0}" class="item">
+<a name = "Relation_{7729656C-C9B8-4027-90E1-122AFAFC81F0}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_SCD_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{B3A9A53E-67DB-42C3-B3D7-5D9E6B42DF96}" class="item">
+<a name = "Relation_{B3A9A53E-67DB-42C3-B3D7-5D9E6B42DF96}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_CREATEDBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_CREATEDBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_CREATEDBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{3A96441C-86A1-4A85-AA52-F667E472435E}" class="item">
+<a name = "Relation_{3A96441C-86A1-4A85-AA52-F667E472435E}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_LASTMODBY</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_LASTMODBY</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_LASTMODBY</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{C92A3474-AC8F-4637-8DB9-D1CD695E31AC}" class="item">
+<a name = "Relation_{C92A3474-AC8F-4637-8DB9-D1CD695E31AC}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_OWNER</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_WIDDIM_USUARIO_OWNER</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_DIM_USUARIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_USER_PK'</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO</td>
+<td class="tabdata" width="30%">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{08BB901B-07C1-4856-B7FD-30A2AEBA0CAA}" class="item">
+<a name = "Relation_{08BB901B-07C1-4856-B7FD-30A2AEBA0CAA}"></a>
+<div class="caption1"><p>TTC_MT_OPORTUNIDADES_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{37D8F78C-4A41-41AC-ABC2-8BC5E67C912E}" class="item">
+<a name = "Relation_{37D8F78C-4A41-41AC-ABC2-8BC5E67C912E}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_SCD_WIDCAT_PRODUCTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD_WIDCAT_PRODUCTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_PRODUCTOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{7F8A80FE-7F0A-4C52-BF51-4848246E859C}" class="item">
+<a name = "Relation_{7F8A80FE-7F0A-4C52-BF51-4848246E859C}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_SCD_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{15310B85-696C-42C5-970A-AD1F95A45190}" class="item">
+<a name = "Relation_{15310B85-696C-42C5-970A-AD1F95A45190}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_SCD_WIDMT_OPORTUNIDAD</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD_WIDMT_OPORTUNIDAD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPORTUNIDADES_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{AA008DAC-3A8E-475C-BB68-4940EFB17CF1}" class="item">
+<a name = "Relation_{AA008DAC-3A8E-475C-BB68-4940EFB17CF1}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_SCD_WIDMT_OPORTUNIDAD_DETALLE</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD_WIDMT_OPORTUNIDAD_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPP_DET_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD_DETALLE</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD_DETALLE</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{FC996998-4C7B-43F2-9BC8-5C32E7A96068}" class="item">
+<a name = "Relation_{FC996998-4C7B-43F2-9BC8-5C32E7A96068}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_SCD_WIDMT_SERVICIO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD_WIDMT_SERVICIO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_SERVICIOS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_SERVICIO</td>
+<td class="tabdata" width="30%">WIDMT_SERVICIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{FC2AAA94-BBE7-425E-A8F8-EAC9B52FEB88}" class="item">
+<a name = "Relation_{FC2AAA94-BBE7-425E-A8F8-EAC9B52FEB88}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_WIDCAT_PRODUCTO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_WIDCAT_PRODUCTO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_PRODUCTOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_PRODUCTOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+<td class="tabdata" width="30%">WIDCAT_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{8000B6CC-8A1F-4B63-A067-DC7A5B096CEF}" class="item">
+<a name = "Relation_{8000B6CC-8A1F-4B63-A067-DC7A5B096CEF}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_WIDMT_CUENTA</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_WIDMT_CUENTA</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_CUENTAS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'STG_TTC_CUENTAS_PK'</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+<td class="tabdata" width="30%">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{5E40FFB3-9670-4DF6-8966-1BA24A9630EE}" class="item">
+<a name = "Relation_{5E40FFB3-9670-4DF6-8966-1BA24A9630EE}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_WIDMT_OPORTUNIDAD</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_WIDMT_OPORTUNIDAD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPORTUNIDADES_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{0146FF6D-1131-4D20-B75F-C117F2100922}" class="item">
+<a name = "Relation_{0146FF6D-1131-4D20-B75F-C117F2100922}"></a>
+<div class="caption1"><p>TTC_MT_SERVICIOS_WIDMT_OPORTUNIDAD_DETALLE</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS_WIDMT_OPORTUNIDAD_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_MT_OPORTUNIDADES_DETALLE</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_MT_SERVICIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_MT_OPP_DET_PK'</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD_DETALLE</td>
+<td class="tabdata" width="30%">WIDMT_OPORTUNIDAD_DETALLE</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{DCEB6F74-41E2-40E1-9967-8855983D4221}" class="item">
+<a name = "Relation_{DCEB6F74-41E2-40E1-9967-8855983D4221}"></a>
+<div class="caption1"><p>TTC_TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDCAT_LISTA_PRECIO</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="25%">Caption</td>
+<td class="tabdata" width="47%">TTC_TTC_CAT_LISTA_DE_PRECIOS_SCD_WIDCAT_LISTA_PRECIO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Relationship Type</td>
+<td class="tabdata" width="47%">Non-identifying</td>
+<td class="tabhead" width="20%">Cardinality</td>
+<td class="tabdata" width="8%">1:N</td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Parent</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Mandatory Child</td>
+<td class="tabdata" width="47%">NO</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Parent Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+<tr>
+<td class="tabhead" width="25%">Child Entity</td>
+<td class="tabdata" width="47%">TTC_CAT_LISTA_DE_PRECIOS_SCD</td>
+<td class="tabdata"  colspan="2" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Referential Integrity</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="26%"></td>
+<td class="tabhead" width="74%">Delete</td>
+</tr>
+<tr>
+<td class="tabhead" width="26%">Parent</td>
+<td class="tabdata" width="74%">NO ACTION</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="40%">Key Type</td>
+<td class="tabhead" width="30%">Parent Key</td>
+<td class="tabhead" width="30%">Child Key</td>
+</tr>
+<tr>
+<td class="tabdata" width="40%">Primary Key 'TTC_CAT_LISTA_DE_PRECIOS_PK'</td>
+<td class="tabdata" width="30%">WIDCAT_LISTA_PRECIO</td>
+<td class="tabdata" width="30%">WIDCAT_LISTA_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>
